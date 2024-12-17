@@ -74,3 +74,12 @@ The backend provides the following API endpoints:
 ```bash
 MONGODB_URI=your_mongodb_connection_string
 ```
+
+## Screenshot
+![Screenshot 2024-12-17 131911](https://github.com/user-attachments/assets/2c14e553-3b81-455a-881d-344e7225e092)
+![Screenshot 2024-12-17 132926](https://github.com/user-attachments/assets/14ac6700-8dc7-48d0-8179-cab54826bc04)
+![Screenshot 2024-12-17 132811](https://github.com/user-attachments/assets/7fe19eef-9ae0-4675-935a-1cfedcfb1f74)
+![Screenshot 2024-12-17 132352](https://github.com/user-attachments/assets/64bd7e57-775a-4565-a055-61abc1c806f2)
+![Screenshot 2024-12-17 132235](https://github.com/user-attachments/assets/28c89161-4335-4e73-9f44-2dba151de811)
+
+
