@@ -1,0 +1,106 @@
+/* TaskManager.css */
+
+/* Basic Layout */
+.task-manager {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+.task-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.task-input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.submit-button {
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.submit-button:disabled {
+    background-color: #ccc;
+}
+
+.task-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.task-item {
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f9f9f9;
+}
+
+.task-title {
+    font-size: 18px;
+}
+
+.completed {
+    color: green;
+}
+
+.pending {
+    color: red;
+}
+
+.task-actions {
+    display: flex;
+    gap: 10px;
+}
+
+button {
+    padding: 5px 10px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+}
+
+.edit-button {
+    background-color: #FFD700;
+    color: black;
+}
+
+.delete-button {
+    background-color: #FF6347;
+    color: white;
+}
+
+.toggle-button {
+    background-color: #ADD8E6;
+    color: black;
+}
+
+/* Hover effects */
+button:hover {
+    opacity: 0.8;
+}
+
+button:disabled {
+    cursor: not-allowed;
+}
