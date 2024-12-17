@@ -25,10 +25,7 @@ Follow these steps to set up the Task Manager application locally:
 
 ```bash
 git clone https://github.com/paraggarg969/task-manager-mern.git
+```
 
-### 2. Install Backend Dependencies
-- Navigate to the backend directory and install the required packages: 
+### 2. Clone the Repository
 
-```bash
-cd backend
-npm install
