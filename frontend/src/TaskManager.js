@@ -1,5 +1,6 @@
 // import React, { useEffect, useState } from "react";
 // import axios from "axios";
+// import "./TaskManager.css";  // Importing the external CSS file
 
 // const TaskManager = () => {
 //     const [tasks, setTasks] = useState([]);
@@ -89,23 +90,25 @@
 //     };
 
 //     return (
-//         <div>
+//         <div className="task-manager">
 //             <h1>Task Manager</h1>
 
 //             {error && <p style={{ color: "red" }}>{error}</p>}
 
-//             <form onSubmit={handleSubmit}>
+//             <form onSubmit={handleSubmit} className="task-form">
 //                 <input
 //                     type="text"
 //                     placeholder="Title"
 //                     value={formData.title}
 //                     onChange={(e) => setFormData({ ...formData, title: e.target.value })}
+//                     className="task-input"
 //                 />
 //                 <input
 //                     type="text"
 //                     placeholder="Description"
 //                     value={formData.description}
 //                     onChange={(e) => setFormData({ ...formData, description: e.target.value })}
+//                     className="task-input"
 //                 />
                 
 //                 {/* Render the Completed checkbox only when editing a task */}
@@ -120,30 +123,36 @@
 //                     </label>
 //                 )}
 
-//                 <button type="submit" disabled={loading}>
+//                 <button type="submit" disabled={loading} className="submit-button">
 //                     {editingTaskId ? "Update Task" : "Add Task"}
 //                 </button>
 //             </form>
 
 //             {loading && <p>Loading tasks...</p>}
 
-//             <ul>
+//             <div className="task-list">
 //                 {tasks.map((task) => (
-//                     <li key={task._id}>
-//                         <strong>{task.title}</strong> - {task.description}
-//                         <span>{task.isCompleted ? " (Completed)" : " (Pending)"}</span>
-//                         <button onClick={() => handleDelete(task._id)} disabled={loading}>
-//                             Delete
-//                         </button>
-//                         <button onClick={() => handleEdit(task)} disabled={loading}>
-//                             Edit
-//                         </button>
-//                         <button onClick={() => handleCompleteToggle(task._id)} disabled={loading}>
-//                             Toggle Complete
-//                         </button>
-//                     </li>
+//                     <div key={task._id} className="task-item">
+//                         <div className="task-title">
+//                             <strong>{task.title}</strong>
+//                             <span className={task.isCompleted ? "completed" : "pending"}>
+//                                 {task.isCompleted ? " (Completed)" : " (Pending)"}
+//                             </span>
+//                         </div>
+//                         <div className="task-actions">
+//                             <button onClick={() => handleEdit(task)} className="edit-button">
+//                                 Edit
+//                             </button>
+//                             <button onClick={() => handleDelete(task._id)} className="delete-button">
+//                                 Delete
+//                             </button>
+//                             <button onClick={() => handleCompleteToggle(task._id)} className="toggle-button">
+//                                 Toggle Complete
+//                             </button>
+//                         </div>
+//                     </div>
 //                 ))}
-//             </ul>
+//             </div>
 //         </div>
 //     );
 // };
@@ -291,6 +300,9 @@ const TaskManager = () => {
                             <span className={task.isCompleted ? "completed" : "pending"}>
                                 {task.isCompleted ? " (Completed)" : " (Pending)"}
                             </span>
+                        </div>
+                        <div className="task-description">
+                            <p>{task.description}</p>
                         </div>
                         <div className="task-actions">
                             <button onClick={() => handleEdit(task)} className="edit-button">
