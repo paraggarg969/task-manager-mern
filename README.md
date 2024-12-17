@@ -27,5 +27,50 @@ Follow these steps to set up the Task Manager application locally:
 git clone https://github.com/paraggarg969/task-manager-mern.git
 ```
 
-### 2. Clone the Repository
+### 2. Install Backend Dependencies
+- Navigate to the backend directory and install the required packages:
 
+```bash
+cd backend
+npm install
+```
+
+### 3. Set Up MongoDB
+- Ensure you have MongoDB installed and running on your local machine. Alternatively, you can set up a cloud MongoDB instance
+
+### 4. Start the Backend Server
+- Start the backend server: This will start the server at http://localhost:8000
+
+```bash
+npm start
+```
+
+### 5. Install Frontend Dependencies
+- Navigate to the frontend directory and install the required packages:
+
+```bash
+cd frontend
+npm install
+```
+
+### 6. Start the Frontend Server
+- Start the React development server: This will open the application at http://localhost:3000
+
+```bash
+npm start
+```
+
+### 7. API Endpoints
+The backend provides the following API endpoints:
+
+- GET /tasks – Fetch all tasks
+- POST /tasks – Create a new task
+- PUT /tasks/:id – Update an existing task (mark as completed or edit details)
+- DELETE /tasks/:id – Delete a task
+
+### 8. .env (Optional)
+- If you are using a cloud database or want to use custom environment variables, create a .env file in the backend directory and add the following:
+
+```bash
+MONGODB_URI=your_mongodb_connection_string
+```
